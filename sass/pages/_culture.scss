@@ -1,0 +1,99 @@
+
+.culture {
+
+   &-info {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+
+      &__grid {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         grid-column-gap: 2.5rem;
+
+         @include responsive(768px) {
+            grid-template-columns: 1fr;
+         }
+      }
+      
+      &__description {
+         @include description(100%);
+      }
+
+      .space-content__principal {
+         text-align: left !important;
+      }
+   }
+
+   &-aside {
+      background-color: $secondLightColor;
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+      margin-bottom: 4rem;
+
+      .space-content__principal {
+         text-align: left !important;
+         text-transform: initial;
+      }
+
+      &__first,
+      &__second {
+         display: grid;
+         grid-template-columns: 2fr 1fr;
+         grid-column-gap: 2rem;
+         align-items: center;
+         margin-bottom: 3rem;
+
+         @include responsive(768px) {
+            grid-template-columns: 1fr;
+         }
+      }
+      
+      &__second {
+         grid-template-columns: repeat(2, 1fr);
+         margin-bottom: 0;
+
+         @include responsive(768px) {
+            grid-template-columns: 1fr;
+         }
+
+         .culture-aside__right {
+            // align-self: end;
+         }
+      }
+
+      &__image {
+         width: 100%;
+      }
+   }
+
+   &-contact {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      margin-bottom: 5rem;
+
+      @include responsive(880px) {
+         grid-template-columns: 1fr;
+         grid-row-gap: 3rem;
+         justify-self: center;
+      }
+
+      &__left {
+         align-self: end;
+
+         .price-section--seminario {
+            margin-bottom: 0;
+            
+            @include responsive(880px) {
+               max-width: 100%;
+            }
+         }
+      }
+
+      &__right {
+
+         .form__subtitle {
+            color: $principalColor;
+         }
+      }
+   }
+}

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="shortcut icon" href="./images/Logo-CPJ.png" type="image/x-icon">
+   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous" />
+   <link rel="stylesheet" href="./css/main.css">
+
+   <title>Centro Paraguayo Japonés</title>
+
+</head>
+
+<body>
+
+   <nav class="navbar">
+      <div class="container">
+         <div class="navbar__logo">
+            <a href="./" class="logo__link">
+               <img src="./images/logoOr.png" alt="" class="logo__image">
+            </a>
+         </div>
+
+         <ul class="navbar__menu">
+
+            <button type="button" class="buttonClose" id="buttonClose">
+               <i class="fas fa-times"></i>
+            </button>
+
+            <li class="navbar__item navbar__item--first"><a href="./history.html" class="navbar__link">Historia</a></li>
+            <li class="navbar__item"><a href="./managers.html" class="navbar__link">Dirección</a></li>
+            <li class="navbar__item navbar__item--dropdown">
+               <a href="#" class="navbar__link" id="buttonDropdown1">
+                  Área Académica
+                  <span class="navbar__icon">
+                     <i class="fas fa-sort-down"></i>
+                  </span>
+               </a>
+
+               <div class="overlayNav"></div>
+               <div class="dropdown" id="dropdown1">
+
+                  <a href="./idiomas.html" class="dropdown__link"><span>Idiomas</span></a>
+                  <a href="./computacion.html" class="dropdown__link"><span>Computación</span></a>
+                  <a href="./danza.html" class="dropdown__link"><span>Academia de Danza</span></a>
+                  <a href="./musica.html" class="dropdown__link"><span>Conservatorio de Música</span></a>
+                  <a href="./artes-visuales.html" class="dropdown__link"><span>Artes Visuales</span></a>
+                  <a href="./gimnasio.html" class="dropdown__link"><span>Gimnasio</span></a>
+                  <a href="./adultos.html" class="dropdown__link"><span>Adultos Mayores</span></a>
+               </div>
+            </li>
+            <li class="navbar__item navbar__item--dropdown">
+               <a href="#" class="navbar__link" id="buttonDropdown">
+                  Área Cultural
+                  <span class="navbar__icon">
+                     <i class="fas fa-sort-down"></i>
+                  </span>
+               </a>
+
+               <div class="overlayNav"></div>
+               <div class="dropdown" id="dropdown">
+                  <a href="./teatro.html" class="dropdown__link"><span>Teatro</span> Agustin Pio Barrios</a>
+                  <a href="./seminario.html" class="dropdown__link"><span>Sala seminario</span> Branislava Susnik</a>
+                  <a href="./anfiteatro.html" class="dropdown__link"><span>Anfiteatro</span> Oscar Cardozo Ocampo</a>
+                  <a href="./exhibiciones.html" class="dropdown__link"><span>Sala de Exposiciones</span> Jacinto
+                     Rivero</a>
+                  <a href="./reuniones.html" class="dropdown__link"><span>Sala de Reuniones</span> Agustina Miranda</a>
+                  <a href="./biblioteca.html" class="dropdown__link"><span>Biblioteca</span> Herib Campos Cervera</a>
+               </div>
+            </li>
+         </ul>
+
+         <div class="navbar__bars" id="buttonToggle">
+            <i class="fas fa-bars"></i>
+         </div>
+      </div>
+   </nav>
+
+   <main class="principal-main">
+      <header class="space-content">
+         <div class="container">
+            <div class="space-content__info">
+               <span class="space-content__principal">ÁREA CULTURAL</span>
+               <span class="space-content__principal">&#8226; Japonesa &#8226;</span>
+               <p class="space-content__description space-content__description--principal">Fue establecida en vista al
+                  pedido de las
+                  entidades vinculadas al Japón, Asociación
+                  Paraguayo Japonesa, Federación de Asociaciones
+                  Japonesas en el Paraguay y Asociación de Ex
+                  Becarios Paraguayos en el Japón, para responder
+                  al alto interés de los paraguayos sobre la práctica
+                  de la cultura japonesa.</p>
+            </div>
+            <div class="space-content__picture">
+               <div class="space-content__media">
+                  <img src="./images/cultura-header.png" alt="" class="space-content__image">
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <section class="culture-info container">
+         <span class="space-content__principal">Sala del té</span>
+         <div class="culture-info__grid">
+            <div class="culture-info__left">
+               <p class="culture-info__description">
+                  En el diseño de la infraestructura edilicia del CPJ, se incluyó la Sala
+                  Japonesa o Chashitsu, para difundir el arte de Sodo, Ceremonia del Té.
+                  Esta Sala es considerada como el “Corazón que desea la Armonía y
+                  respeta a la Naturaleza”, tal como representa la filosofía del arte
+                  japonés.
+               </p>
+               <p class="culture-info__description">
+                  Un chashitsu ( 茶室 , "sala de té") es un espacio arquitectónico
+                  diseñado para ser utilizado para la ceremonia del té (chanoyu)
+                  reuniones.
+               </p>
+               <p class="culture-info__description">
+                  Se trata de una tradición que se originó en el siglo XIII, cuando los
+                  samuráis japoneses comenzaron a tomar matcha, un tipo de té verde
+                  que se extraía de la planta del té negro.
+               </p>
+               <p class="culture-info__description">
+                  El estilo arquitectónico que se desarrolló para chashitsu se conoce
+                  como la sukiya estilo (sukiya - zukuri), y el término sukita (数奇屋).
+                  Términos japoneses relacionados con chaseki, lo que significa “lugar
+                  para el té”, espacio donde las personas se sientan a participar en la
+                  ceremonia del té y chabana, “flores de té”, el estilo de arreglo floral
+                  asociado con la ceremonia del té.
+               </p>
+            </div>
+            <div class="culture-info__right">
+               <p class="culture-info__description">
+                  Las características típicas de chashitsu son Shoji ventanas y puertas
+                  correderas hechas de colosía de madera cubierta en un translúcido
+                  papel japonés, tatami suelo de estera, un tokonomo alcoba, Koma que
+                  es una sala de preparación, Mizuya lugar donde se lavan y guardan los
+                  utensilios que van a ser utilizados en la ceremonia, tiene espacios y
+                  muebles empotrados con colores y estilos apagados
+                  simples.Asimismo tiene ocho apliques colgantes de luces de bambú
+                  TAKE SHĪRINGURANPU con hermosos diseños, y la Cocina que es el
+                  complemento de la Sala de Té para la preparación de las comidas que
+                  se sirven durante la ceremonia.
+               </p>
+               <p class="culture-info__description">
+                  A lo largo de la historia del CPJ que cumplió en el presente año su
+                  trigésimo segundo aniversario de inauguración, la Sala Japonesa fue
+                  escenario de incontables eventos para la difusión de Chanoyu, Sado o
+                  Senda del Té, llegando inclusive a formar dos maestras paraguayas
+                  (sin ascendencia japonesa) de la Ceremonia del Té a través de los
+                  cursos organizados por la Asociación Paraguayo Japonesa con el
+                  apoyo de Voluntarias Seniors de la Agencia de Cooperación
+                  Internacional del Japón JICA
+               </p>
+            </div>
+         </div>
+      </section>
+
+      <section class="culture-aside">
+         <div class="container">
+            <span class="space-content__principal">Ceremonia del Té</span>
+            <article class="culture-aside__first">
+               <div class="culture-aside__left">
+                  <p class="culture-info__description">
+                     La primera Ceremonia del Té, se realizó el martes 23 de agosto de 1988 durante la
+                     inauguración del CPJ, estuvo a cargo de la señora Keiko de Toyotoshi como anfitriona y las
+                     señoras Yoko Hirai, Yasuko Moriya y Mimie de Yamamoto como ayudantes.
+                  </p>
+                  <p class="culture-info__description">
+                     La ceremonia del té japonés, está considerada como un regalo impagable que el anfitrión,
+                     hace a los invitados. Ofrecer una ceremonia de té, significa hospitalidad. De igual forma,
+                     los invitados deben agradecer y valorar con honores el haber participado en la ceremonia.
+                  </p>
+               </div>
+               <div class="culture-aside__right">
+                  <div class="culture-aside__media">
+                     <img src="./images/aside1.png" alt="" class="culture-aside__image">
+                  </div>
+               </div>
+            </article>
+            <article class="culture-aside__second">
+               <div class="culture-aside__left">
+                  <p class="culture-info__description">
+                     Para poder realizar una ceremonia del té japonesa oficial, es necesario
+                     llegar a poseer el certificado o título menjo. Poseer este título,
+                     significa haber pasado una serie de pruebas que capacitan a la
+                     persona como anfitrión de la ceremonia del té. De igual forma que en
+                     otras artes japonesas como el karate o el Aikido, nadie puede impartir
+                     clases si no ha llegado previamente a nivel requerido.
+                  </p>
+                  <p class="culture-info__description">
+                     La persona encargada de la ceremonia ha de estar familiarizada con
+                     una serie de saberes tradicionales, que abarcan tanto los
+                     conocimientos sobre los tipos de té y su producción, como el kimono,
+                     el arreglo floral, la caligrafía, el incienso, entre otras.
+                  </p>
+                  <p class="culture-info__description">
+                     La Ceremonia del té tiene una duración de cuatro horas, si se hace
+                     entera (en esta versión recibe el nombre de Cha-ji). En este caso, no se
+                     limita a la simple preparación del té, sino que incluye el kaiseki, que
+                     es una comida ligera, el usucha, la toma de un té ligero y la koicha, que
+                     es un té más espeso y pesado.
+                  </p>
+               </div>
+               <div class="culture-aside__right">
+                  <div class="culture-aside__media">
+                     <img src="./images/aside1.png" alt="" class="culture-aside__image">
+                  </div>
+               </div>
+            </article>
+         </div>
+      </section>
+
+      <section class="culture-info container">
+         <span class="space-content__principal">Jardín Japonés</span>
+         <div class="culture-info__grid">
+            <div class="culture-info__left">
+               <p class="culture-info__description">
+                  Los jardines japoneses, además de expresar la belleza natural del país,
+                  son un símbolo del alma del ser humano y de la visión natural y
+                  religiosa de los japoneses que creen en la eternidad de la naturaleza.
+               </p>
+               <p class="culture-info__description">
+                  Los jardines japoneses reflejan las perspectivas filosóficas y religiosas
+                  tradicionales que creen en la eternidad del alma y la naturaleza. No
+                  sólo reflejan la belleza, sino que muestran un mundo singular con
+                  objetos naturales como los árboles, la hierba, el agua y las rocas.
+                  Entrar en uno de estos espacios naturales es refugiarse del ajetreo de
+                  la ciudad para introducirse en un pequeño universo.
+               </p>
+               <p class="culture-info__description">
+                  Su encanto reside en que ofrece a la persona que los recorre un
+                  entorno silencioso ideal para reflexionar sobre sí misma.
+               </p>
+            </div>
+            <div class="culture-info__right">
+               <div class="culture-info__media">
+                  <img src="./images/jardin1.png" alt="" class="culture-aside__image">
+               </div>
+            </div>
+            <div class="culture-info__left">
+               <div class="culture-info__media">
+                  <img src="./images/jardin2.png" alt="" class="culture-aside__image">
+               </div>
+            </div>
+            <div class="culture-info__right">
+               <div class="culture-info__media">
+                  <img src="./images/cultura-header.png" alt="" class="culture-aside__image">
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <aside class="culture-contact container">
+         <div class="culture-contact__left">
+            <section class="price-section price-section--seminario container">
+               <div>
+                  <h3 class="price-section__title">Costos de nuestros espacios según ordenanza vigente</h3>
+                  <div class="price-section__action">
+                     <a href="#" class="price-section__download">Descarga aquí</a>
+                  </div>
+               </div>
+            </section>
+         </div>
+         <div class="culture-contact__right">
+            <form class="form">
+               <h3 class="form__subtitle">CONSULTAS SOBRE FECHAS DISPONIBLES DE ESTA SALA</h3>
+               <span class="form__title">Complete los siguientes datos</span>
+               <div class="form__group">
+                  <input type="text" class="form__input" placeholder="Nombre y Apellido">
+               </div>
+               <div class="form__group">
+                  <input type="text" class="form__input" placeholder="Correo Electrónico">
+               </div>
+               <div class="form__group">
+                  <textarea name="message" id="message" rows="5" class="form__input form__input--textarea"
+                     placeholder="Mensaje"></textarea>
+               </div>
+               <div class="form__action">
+                  <button type="submit" class="form__button">Enviar</button>
+               </div>
+            </form>
+         </div>
+      </aside>
+   </main>
+
+   <div class="before-footer container">
+      <div class="before-footer__item">
+         <img src="./images/gestion_intendente.png" alt="" class="before-footer__image">
+      </div>
+      <div class="before-footer__item">
+         <img src="./images/hashtag_asu.png" alt="" class="before-footer__image">
+      </div>
+      <div class="before-footer__item">
+         <img src="./images/logo_asu.png" alt="" class="before-footer__image before-footer__image--logo">
+      </div>
+      <div class="before-footer__item">
+         <img src="./images/logoOr.png" alt="" class="before-footer__image">
+      </div>
+   </div>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__main">
+            <div class="footer-detail">
+               <h3 class="footer__social-title">Contactanos</h3>
+               <a href="#" class="footer-detail__link">
+                  <span class="footer-detail__icon">
+                     <i class="fas fa-phone-alt"></i>
+                  </span>
+                  <span class="footer-detail__text">021 607 277</span>
+               </a>
+               <a href="#" class="footer-detail__link">
+                  <span class="footer-detail__icon">
+                     <i class="fas fa-envelope"></i>
+                  </span>
+                  <span class="footer-detail__text">centroparaguayojapones@gmail.com</span>
+               </a>
+               <a href="#" class="footer-detail__link">
+                  <span class="footer-detail__icon">
+                     <i class="fas fa-map-marker-alt"></i>
+                  </span>
+                  <span class="footer-detail__text">
+                     Av Domingo Portillo y Julio Correa<br>c/ Santísima Trinidad,
+                     Asunción</span>
+               </a>
+            </div>
+            <div class="footer__social-container">
+               <h3 class="footer__social-title">Seguinos</h3>
+               <div class="footer__social">
+                  <a href="#" class="footer__link">
+                     <img src="./images/facebook.png" alt="" class="footer__image">
+                  </a>
+                  <a href="#" class="footer__link">
+                     <img src="./images/twitter.png" alt="" class="footer__image">
+                  </a>
+                  <a href="#" class="footer__link">
+                     <img src="./images/instagram.png" alt="" class="footer__image">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="copyright">
+         <span class="footer__copy">Diseño y desarrollo web por <a href="https://www.fincreativo.com/"
+               class="footer__copy--link" target="_blank">fincreativo</a></span>
+      </div>
+   </footer>
+
+   <script src="./js/app.js"></script>
+
+</body>
+
+</html>

@@ -72,6 +72,10 @@
       margin: 0;
       margin-bottom: 1rem;
       font-weight: 500;
+      
+      @include responsive(768px) {
+         text-align: center;
+      }
    }
 }
 
@@ -91,7 +95,7 @@
       background-image: url('../images/footer-divider.png');
       background-repeat: no-repeat;
       background-position: center;
-      background-size: contain;
+      background-size: cover;
    }
 }
 
