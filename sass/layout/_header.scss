@@ -1,0 +1,75 @@
+
+
+.header {
+   background-color: $secondLightColor;
+   min-height: 76vh;
+   margin-top: 24vh;
+
+   .container {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      grid-column-gap: 1.5rem;
+      align-items: center;
+      height: inherit;
+      padding-bottom: 4rem;
+
+      @include responsive(992px) {
+         grid-template-columns: 1fr;
+      }
+
+      @include responsive(480px) {
+         justify-items: center;
+         grid-row-gap: 2rem;
+      }
+   }
+}
+
+.header__image {
+   width: 100%;
+}
+
+.header__logo {
+   font-size: 6rem;
+   font-weight: 300;
+   margin-top: 0;
+   margin-bottom: 0;
+   line-height: 0.8;
+
+   @include responsive(576px) {
+      font-size: 4rem;
+   }
+
+   @include responsive(480px) {
+      font-size: 3rem;
+   }
+}
+
+.header__logo--first {
+   color: $principalColor;
+   display: block;
+}
+
+.header__logo--second {
+   color: hsl(0, 0%, 30%);
+   display: block;
+   margin-left: 0.65rem;
+   margin-top: -0.95rem;
+   letter-spacing: 1px;
+
+   @include responsive(480px) {
+      margin-top: 0.25rem;
+   }
+}
+
+.header__logo--thirth {
+   color: $principalColor;
+   display: block;
+   margin-left: 11.87rem;
+   margin-top: -0.95rem;
+   letter-spacing: 1px;
+
+   @include responsive(480px) {
+      margin-top: 0.25rem;
+      margin-left: 4rem;
+   }
+}

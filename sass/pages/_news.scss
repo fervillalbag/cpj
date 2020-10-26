@@ -1,0 +1,40 @@
+
+.news {
+   margin-top: 3rem;
+
+   &__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 2rem;
+      margin-top: 2rem;
+
+      @include responsive(768px) {
+         grid-template-columns: repeat(2, 1fr);
+         grid-row-gap: 1.5rem;
+      }
+
+      @include responsive(576px) {
+         grid-template-columns: 1fr;
+      }
+   }
+
+   &__image {
+      width: 100%;
+   }
+
+   &__subtitle {
+      color: $darkColor;
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      margin-top: 0.75rem;
+      margin-bottom: 0.5rem;
+   }
+
+   &__text {
+      display: block;
+      color: $darkColor;
+      font-weight: 300;
+      font-size: 1.1rem;
+   }
+}

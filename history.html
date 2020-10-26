@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="shortcut icon" href="./images/Logo-CPJ.png" type="image/x-icon">
+   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous" />
+   <link rel="stylesheet" href="./css/main.css">
+
+   <title>Centro Paraguayo Japonés</title>
+
+</head>
+
+<body>
+
+   <nav class="navbar">
+      <div class="container">
+         <div class="navbar__logo">
+            <a href="./" class="logo__link">
+               <img src="./images/logoOr.png" alt="" class="logo__image">
+            </a>
+         </div>
+
+         <ul class="navbar__menu">
+
+            <button type="button" class="buttonClose" id="buttonClose">
+               <i class="fas fa-times"></i>
+            </button>
+
+            <li class="navbar__item navbar__item--first"><a href="./history.html" class="navbar__link">Historia</a></li>
+            <li class="navbar__item"><a href="./managers.html" class="navbar__link">Dirección</a></li>
+            <li class="navbar__item navbar__item--dropdown">
+               <a href="#" class="navbar__link" id="buttonDropdown1">
+                  Área Académica
+                  <span class="navbar__icon">
+                     <i class="fas fa-sort-down"></i>
+                  </span>
+               </a>
+
+               <div class="overlayNav"></div>
+               <div class="dropdown" id="dropdown1">
+
+                  <a href="./idiomas.html" class="dropdown__link"><span>Idiomas</span></a>
+                  <a href="./computacion.html" class="dropdown__link"><span>Computación</span></a>
+                  <a href="./danza.html" class="dropdown__link"><span>Academia de Danza</span></a>
+                  <a href="./musica.html" class="dropdown__link"><span>Conservatorio de Música</span></a>
+                  <a href="./artes-visuales.html" class="dropdown__link"><span>Artes Visuales</span></a>
+                  <a href="./gimnasio.html" class="dropdown__link"><span>Gimnasio</span></a>
+                  <a href="./adultos.html" class="dropdown__link"><span>Adultos Mayores</span></a>
+               </div>
+            </li>
+            <li class="navbar__item navbar__item--dropdown">
+               <a href="#" class="navbar__link" id="buttonDropdown">
+                  Área Cultural
+                  <span class="navbar__icon">
+                     <i class="fas fa-sort-down"></i>
+                  </span>
+               </a>
+
+               <div class="overlayNav"></div>
+               <div class="dropdown" id="dropdown">
+                  <a href="./teatro.html" class="dropdown__link"><span>Teatro</span> Agustin Pio Barrios</a>
+                  <a href="./seminario.html" class="dropdown__link"><span>Sala seminario</span> Branislava Susnik</a>
+                  <a href="./anfiteatro.html" class="dropdown__link"><span>Anfiteatro</span> Oscar Cardozo Ocampo</a>
+                  <a href="./exhibiciones.html" class="dropdown__link"><span>Sala de Exposiciones</span> Jacinto
+                     Rivero</a>
+                  <a href="./reuniones.html" class="dropdown__link"><span>Sala de Reuniones</span> Agustina Miranda</a>
+                  <a href="./biblioteca.html" class="dropdown__link"><span>Biblioteca</span> Herib Campos Cervera</a>
+               </div>
+            </li>
+         </ul>
+
+         <div class="navbar__bars" id="buttonToggle">
+            <i class="fas fa-bars"></i>
+         </div>
+      </div>
+   </nav>
+
+   <main class="principal-main">
+      <header class="history">
+         <div class="container">
+            <div class="history__info">
+               <h2 class="history__title">Centro<br>paraguayo<br>japonés (cpj)</h2>
+               <h3 class="history__subtitle">Nuestra historia</h3>
+               <p class="history__description">El Centro Paraguayo Japonés Para el Desarrollo de
+                  los Recursos Humanos, es la primera Institución
+                  integral para las actividades de educación social
+                  en el Paraguay. Fue inaugurado el 23 de agosto de
+                  1988. Construida sobre una superficie de 7000
+                  m2. Donado por el Gobierno y Pueblo del Japón
+                  gracias a una asistencia financiera no
+                  reembolsable de carácter general por valor de
+                  1.541.000.000 yenes.</p>
+            </div>
+            <div class="header__picture">
+               <div class="history__media">
+                  <img src="./images/14.png" alt="" class="history__image">
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <section class="history-hero">
+         <div class="container">
+            <div class="history-hero__grid">
+               <div class="history-hero__item">
+                  <img src="./images/historia1.png" alt="" class="history-hero__image">
+               </div>
+               <div class="history-hero__item">
+                  <img src="./images/historia2.png" alt="" class="history-hero__image">
+               </div>
+            </div>
+
+            <div class="header__caption">
+               <p class="media__description">Su construcción se inició el 2 de octubre de 1986, con la palada
+                  inicial realizada por sus Altezas Imperiales, el Príncipe Hitachi y la
+                  Princesa Hanako quienes visitaron en aquella ocasión el Paraguay
+                  para asistir a los actos conmemorativos del cincuentenario de la
+                  inmigración Japonesa.</p>
+            </div>
+         </div>
+      </section>
+
+      <main class="history__main container">
+         <div class="history__section">
+            <div class="">
+               <h3 class="main__title">ES ADMINISTRADA POR LA MUNICIPALIDAD DE ASUNCIÓN
+                  AL SERVICIO DE LA CIUDADANÍA.</h3>
+               <p class="main__description">El Centro Paraguayo Japonés para el Desarrollo de Recursos Humanos, en el
+                  transcurso
+                  del tiempo, adquirió una identidad propia y a lo largo de estos 30 años ha cumplido con
+                  su objetivo de servir a la comunidad.</p>
+               <p class="main__description">Como su nombre lo indica, uno de los ejes del Centro Paraguayo Japonés es la
+                  promoción
+                  de los Recursos Humanos, centrado principalmente en la formación de jóvenes
+                  paraguayos para posibilitar su ingreso al mercado de trabajo, habilitándolos en el campo
+                  de la informática, el conocimiento de idiomas, las artes plásticas, la música, la danza y
+                  los deportes.</p>
+               <p class="main__description">Fue creado como punto insustituible de encuentro, cooperación e integración
+                  de
+                  ciudadanos paraguayos y japoneses.</p>
+            </div>
+            <div class="">
+               <img src="./images/historia3.png" alt="">
+            </div>
+         </div>
+
+         <div class="main__footer">
+            <div class="main__left">
+               <p class="main__description main__description--full">Los institutos de formación, los artistas y
+                  trabajadores culturales
+                  encuentran en este Centro un espacio y un punto de apoyo para el
+                  desarrollo de sus actividades en condiciones flexibles.</p>
+               <p class="main__description main__description--full">El CPJ es frecuentemente utilizado por delegaciones
+                  diplomáticas,
+                  grupos de artistas y agentes culturales, nacionales e internacionales,
+                  gremios de profesionales, académicas, empresariales y uno de los
+                  sitios permanentes para los programas educativos y culturales que
+                  encara la Municipalidad de Asunción.</p>
+            </div>
+            <div class="main__right">
+               <h3 class="main__title main__title--full">PARA EL DESARROLLO DE LOS RECURSOS HUMANOS</h3>
+               <p class="main__description main__description--full">El Centro Paraguayo Japonés en sus años de
+                  funcionamiento
+                  ha contribuido con la ciudadanía en el desarrollo de los
+                  recursos humanos ofreciendo cursos de capacitación a
+                  costos muy accesibles, dirigidos a niños, jóvenes y adultos
+                  insertándolos en el campo laboral con herramientas
+                  sustentables.</p>
+               <p class="main__description main__description--full">Ofrece cursos de idiomas, computación, danza,
+                  música,
+                  artes visuales, y deportes.</p>
+            </div>
+         </div>
+      </main>
+   </main>
+
+   <div class="before-footer container">
+      <div class="before-footer__item">
+         <img src="./images/gestion_intendente.png" alt="" class="before-footer__image">
+      </div>
+      <div class="before-footer__item">
+         <img src="./images/hashtag_asu.png" alt="" class="before-footer__image">
+      </div>
+      <div class="before-footer__item">
+         <img src="./images/logo_asu.png" alt="" class="before-footer__image before-footer__image--logo">
+      </div>
+      <div class="before-footer__item">
+         <img src="./images/logoOr.png" alt="" class="before-footer__image">
+      </div>
+   </div>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__main">
+            <div class="footer-detail">
+               <h3 class="footer__social-title">Contactanos</h3>
+               <a href="#" class="footer-detail__link">
+                  <span class="footer-detail__icon">
+                     <i class="fas fa-phone-alt"></i>
+                  </span>
+                  <span class="footer-detail__text">021 607 277</span>
+               </a>
+               <a href="#" class="footer-detail__link">
+                  <span class="footer-detail__icon">
+                     <i class="fas fa-envelope"></i>
+                  </span>
+                  <span class="footer-detail__text">centroparaguayojapones@gmail.com</span>
+               </a>
+               <a href="#" class="footer-detail__link">
+                  <span class="footer-detail__icon">
+                     <i class="fas fa-map-marker-alt"></i>
+                  </span>
+                  <span class="footer-detail__text">
+                     Av Domingo Portillo y Julio Correa<br>c/ Santísima Trinidad,
+                     Asunción</span>
+               </a>
+            </div>
+            <div class="footer__social-container">
+               <h3 class="footer__social-title">Seguinos</h3>
+               <div class="footer__social">
+                  <a href="#" class="footer__link">
+                     <img src="./images/facebook.png" alt="" class="footer__image">
+                  </a>
+                  <a href="#" class="footer__link">
+                     <img src="./images/twitter.png" alt="" class="footer__image">
+                  </a>
+                  <a href="#" class="footer__link">
+                     <img src="./images/instagram.png" alt="" class="footer__image">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="copyright">
+         <span class="footer__copy">Diseño y desarrollo web por <a href="https://www.fincreativo.com/"
+               class="footer__copy--link" target="_blank">fincreativo</a></span>
+      </div>
+   </footer>
+
+   <script src="./js/app.js"></script>
+
+</body>
+
+</html>

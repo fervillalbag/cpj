@@ -1,0 +1,42 @@
+
+
+.countries__grid {
+   margin-top: 1rem;
+   display: inline-grid;
+   grid-template-columns: repeat(6, 1fr);
+   grid-column-gap: 0.5rem;
+}
+
+.idiomas-blockquote {
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   grid-column-gap: 4rem;
+
+   @include responsive(768px) {
+      grid-template-columns: 1fr;
+      grid-row-gap: 1rem;
+   }
+}
+
+.idiomas-blockquote {
+   padding-top: 10rem;
+   margin-bottom: 3rem;
+}
+
+.idiomas-blockquote__description {
+   @include description(100%);
+}
+
+.blockquote-container {
+   clip-path: polygon(100% 0, 100% 75%, 55% 75%, 83% 93%, 35% 75%, 0 75%, 0 0);
+   background-color: $principalColor;
+   color: $firstLightColor;
+   padding: 2rem 1rem 5rem 1rem;
+   display: flex;
+   justify-content: center;
+   max-width: 80%;
+
+   span {
+      display: block;
+   }
+}

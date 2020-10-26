@@ -1,0 +1,530 @@
+
+
+.principal-main {
+   background-image: url('../images/fondo.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.space-content {
+   margin-top: 24vh;
+
+   .container {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      grid-column-gap: 2rem;
+      padding-top: 3rem;
+
+      @include responsive(920px) {
+         grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include responsive(840px) {
+         grid-template-columns: 1fr;
+      }
+   }
+}
+
+.space-content__info {
+   padding-top: 5rem;
+
+   @include responsive(576px) {
+      padding-top: 2rem;
+   }
+}
+
+.space-content__image {
+   width: 100%;
+   display: block;
+}
+
+.space-content__principal {
+   display: block;
+   font-size: 2.4rem;
+   color: $principalColor;
+   font-weight: 700;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.space-content__principal--small {
+   font-size: 2rem;
+}
+
+.space-content__title {
+   font-size: 2.2rem;
+   color: $darkColor;
+   text-align: center;
+   text-transform: uppercase;
+   margin-top: 1rem;
+}
+
+.space-content__description {
+   @include description(96%);
+   margin-top: 1rem;
+
+   @include responsive(840px) {
+      max-width: 100%;
+   }
+
+   &--principal {
+      font-size: 1.4rem;
+   }
+}
+
+.space-content__subtitle {
+   @extend %title;
+   font-size: 1.55rem;
+   margin-bottom: 0;
+}
+
+.space-content__caption {
+   @include caption(80%);
+   transform: translateX(1rem);
+   margin-top: -4rem;
+}
+
+/* Biography */
+
+.biography__header {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-column-gap: 2rem;
+   align-items: end;
+   position: relative;
+   z-index: 100;
+   padding-left: 1rem;
+   padding-right: 1rem;
+
+   @include responsive(375px) {
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 1rem;
+   }
+}
+
+.collage__image {
+   width: 100%;
+}
+
+.biography__media {
+   z-index: 10;
+}
+
+.biography__image {
+   max-width: 100%;
+}
+
+
+.biography__main {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   padding-bottom: 8rem;
+   position: relative;
+
+   @include responsive(840px) {
+      grid-template-columns: 1fr;
+      grid-row-gap: 2rem;
+   }
+}
+
+/* === Teatro === */
+.biography__main--theater {
+   margin-top: 7rem;
+}
+
+.biography__left {
+   margin-top: -6rem;
+
+   &--library {
+      margin-top: 2rem;
+   }
+
+   &--exhibits {
+
+      @include responsive(840px) {
+         margin-top: 5rem;
+      }
+   }
+
+   &--location {
+
+      @include responsive(840px) {
+         margin-top: 2rem;
+      }
+   }
+
+   &--meetings {
+
+      @include responsive(840px) {
+         margin-top: 2rem;
+      }
+   }
+
+   &--seminar {
+
+      @include responsive(840px) {
+         margin-top: 2rem;
+      }
+   }
+
+   &--theater {
+
+      @include responsive(840px) {
+         margin-top: -2rem;
+      }
+   }
+}
+
+.biography__image--library {
+   max-width: 200px;
+
+   @include responsive(576px) {
+      width: 100%;
+   }
+}
+
+.biography__image--seminar {
+   margin-bottom: -1rem;
+
+   @include responsive(576px) {
+      width: 100%;
+   }
+}
+
+.biography__caption {
+   @include biography__caption(100%);
+   margin-top: -8rem;
+
+   .biography__subtitle {
+      @extend %title;
+      font-size: 1.5rem;
+      text-align: right;
+   }
+
+   &--library {
+      margin-top: -7rem;
+   }
+}
+
+.biography__subtitle {
+   @extend %title;
+   font-size: 1.5rem;
+}
+
+
+.content__form {
+   margin-top: 2rem;
+
+   @include responsive(840px) {
+      margin-top: 0;
+   }
+}
+
+.button-up {
+   position: absolute;
+   bottom: 2rem;
+   right: 0;
+}
+
+/* Form */
+
+.form {
+   padding: 1rem 2rem;
+   background-color: hsl(7, 69%, 95%);
+   width: 88%;
+   margin-left: auto;
+   margin-right: 0;
+
+   @include responsive(576px) {
+      width: 100%;
+      margin: 0;
+   }
+}
+
+.form--theater {
+   margin-top: 4rem;
+}
+
+.form--meetings {
+   margin-top: 4rem;
+
+   @include responsive(840px) {
+      margin-top: 0;
+   }
+}
+
+.form--location {
+
+   @include responsive(576px) {
+      margin-top: 2rem;
+   }
+}
+
+.form__subtitle {
+   @extend %title;
+   color: $darkColor;
+   font-size: 1.25rem;
+   margin-bottom: 0.5rem;
+
+   &--adultos {
+      text-transform: initial;
+      color: $principalColor;
+   }
+}
+
+.form__title {
+   display: block;
+   @include description(100%);
+   margin-bottom: 0.5rem;
+
+   span {
+      font-weight: 500;
+   }
+
+   &--last {
+      margin-top: 1rem;
+   }
+}
+
+.form__group {
+   margin-bottom: 0.75rem;
+}
+
+.form__input {
+   display: block;
+   width: 100%;
+   outline: none;
+   height: 2.6rem;
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+   border: 1px solid $darkColor;
+   background-color: transparent;
+   font-weight: 400;
+   letter-spacing: 0.5px;
+
+   &--textarea {
+      height: 4rem;
+      padding-top: 0.5rem;
+   }
+}
+
+::placeholder {
+   font-weight: 300;
+}
+
+.form__action {
+   display: flex;
+   justify-content: center;
+   margin-top: 1.55rem;
+
+   &--course {
+      justify-content: flex-start;
+   }
+}
+
+.form__button {
+   background-color: transparent;
+   outline: none;
+   border: 1px solid $darkColor;
+   padding: 0.5rem 1rem;
+   cursor: pointer;
+   text-transform: uppercase;
+   font-weight: 300;
+}
+
+.form__group--radios {
+   display: grid;
+   grid-template-columns: repeat(4, auto);
+   grid-row-gap: 0.75rem;
+   margin-top: 0.75rem;
+
+   @include responsive(768px) {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   &--computacion {
+      grid-template-columns: repeat(3, auto);
+      grid-column-gap: 1rem;
+      
+      @include responsive(768px) {
+         grid-template-columns: repeat(2, 1fr);
+      }
+   }
+
+   .form__group--radio {
+      display: flex; 
+      align-items: center;
+   }
+
+   label {
+      font-size: 0.9rem;
+      font-weight: 300;
+      display: block;
+      margin-left: 0.25rem;
+   }
+}
+
+.collage {
+   display: grid;
+   grid-template-columns: 1fr;
+
+   @include responsiveMobile(576px){
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 6rem;
+      margin-top: 4rem;
+   }
+}
+
+.collage__item:nth-child(1) {
+
+   .collage__image {
+      @include responsiveMobile(840px) {
+         margin-top: -4rem;
+         margin-left: 2rem;
+      }
+   }
+}
+
+.collage__item:nth-child(2) {
+
+   .collage__image {
+      @include responsiveMobile(840px) {
+         margin-bottom: -4rem;
+      }
+   }
+}
+
+.before-footer {
+   max-width: 70%;
+   margin-bottom: 4rem;
+
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-column-gap: 2rem;
+   align-items: center;
+   justify-items: center;
+
+   @include responsive(768px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 1rem;
+   }
+
+   @include responsive(576px) {
+      grid-template-columns: 1fr;
+      grid-row-gap: 1.75rem;
+   }
+}
+
+.before-footer__image {
+   width: 100%;
+
+   &--logo {
+      max-width: 140px;
+   }
+
+   &--logo-cpj {
+      max-width: 120px;
+   }
+}
+
+/* Teatro New Layout */
+
+.biography__main--newLayout {
+   display: grid;
+   grid-template-columns: 1fr;
+
+   &.biography__main--theater {
+      margin-top: 3rem;
+   }
+}
+
+.biography__left--newLayout {
+   display: grid;
+   grid-template-columns: 1fr 3fr;
+   max-width: 100%;
+   margin-top: 8rem;
+
+   @include responsive(800px) {
+      grid-template-columns: 1fr;
+      grid-row-gap: 8rem;
+      margin-top: 0;
+   }
+
+   .biography__caption {
+
+      padding: 2rem 2rem 2rem 6rem;
+
+      @include responsive(800px) {
+         padding: 2rem;
+      }
+   }
+
+   .biography__main {
+      @include responsive(800px) {
+         padding-top: 2rem;
+      }
+   }
+
+   .biography__header {
+      display: grid;
+      grid-template-columns: 1fr;
+   }
+
+   .biography__media {
+      position: absolute;
+      top: -12rem;
+
+      @include responsive(800px) {
+         position: initial;
+         top: 0;
+      }
+   }
+
+   .biography__image {
+      max-width: 300px;
+
+      @include responsive(992px) {
+         max-width: 260px;
+      }
+
+      @include responsive(800px) {
+         width: 100%;
+      }
+   }
+
+   .biography__subtitle {
+      text-align: left;
+   }
+
+}
+
+/* Content Principal */
+
+.content-principal {
+   background-image: url('../images/fondo.png');
+   background-size: contain;
+   background-position: center top;
+   background-repeat: no-repeat;
+}
+
+.content-bg {
+   position: relative;
+   width: 100%;
+
+   &__item {
+      position: absolute;
+      top: -2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1920px;
+      height: 20rem;
+      background-image: url('../images/fondo.png');
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+      z-index: -100;
+   }
+}
+
+/* Utilities */

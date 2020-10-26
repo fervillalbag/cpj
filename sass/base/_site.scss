@@ -1,0 +1,26 @@
+
+ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+.section {
+   padding-top: 3rem;
+   padding-bottom: 3rem;
+}
+
+.container {
+   max-width: 1000px;
+   width: 88vw;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.container__fluid {
+   max-width: 1200px;
+}
+
+.lowercase {
+   text-transform: lowercase;
+}

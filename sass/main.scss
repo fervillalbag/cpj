@@ -1,0 +1,32 @@
+
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/typography";
+@import "base/reset";
+@import "base/site";
+
+@import "components/price-section";
+
+@import "pages/home";
+@import "pages/structure";
+@import "pages/history";
+@import "pages/managers";
+@import "pages/news";
+@import "pages/calendar";
+
+@import "layout/navbar";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/courses";
+@import "layout/noticias";
+
+@import "content/artes-visuales";
+@import "content/musica";
+@import "content/gimnasio";
+@import "content/computacion";
+@import "content/idiomas";
+@import "content/danza";
+@import "content/mayores";
+
+

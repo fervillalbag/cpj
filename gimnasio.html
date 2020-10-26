@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <meta name="description" content="Centro Paraguayo Japonés">
+   <link rel="shortcut icon" href="./images/Logo-CPJ.png" type="image/x-icon">
+   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous" />
+   <link rel="stylesheet" href="./css/main.css">
+
+   <title>Centro Paraguayo Japonés</title>
+
+</head>
+
+<body>
+
+   <nav class="navbar">
+      <div class="container">
+         <div class="navbar__logo">
+            <a href="./" class="logo__link">
+               <img src="./images/logoOr.png" alt="" class="logo__image">
+            </a>
+         </div>
+
+         <ul class="navbar__menu">
+
+            <button type="button" class="buttonClose" id="buttonClose">
+               <i class="fas fa-times"></i>
+            </button>
+
+            <li class="navbar__item navbar__item--first"><a href="./history.html" class="navbar__link">Historia</a></li>
+            <li class="navbar__item"><a href="./managers.html" class="navbar__link">Dirección</a></li>
+            <li class="navbar__item navbar__item--dropdown">
+               <a href="#" class="navbar__link" id="buttonDropdown1">
+                  Área Académica
+                  <span class="navbar__icon">
+                     <i class="fas fa-sort-down"></i>
+                  </span>
+               </a>
+
+               <div class="overlayNav"></div>
+               <div class="dropdown" id="dropdown1">
+
+                  <a href="./idiomas.html" class="dropdown__link"><span>Idiomas</span></a>
+                  <a href="./computacion.html" class="dropdown__link"><span>Computación</span></a>
+                  <a href="./danza.html" class="dropdown__link"><span>Academia de Danza</span></a>
+                  <a href="./musica.html" class="dropdown__link"><span>Conservatorio de Música</span></a>
+                  <a href="./artes-visuales.html" class="dropdown__link"><span>Artes Visuales</span></a>
+                  <a href="./gimnasio.html" class="dropdown__link"><span>Gimnasio</span></a>
+                  <a href="./adultos.html" class="dropdown__link"><span>Adultos Mayores</span></a>
+               </div>
+            </li>
+            <li class="navbar__item navbar__item--dropdown">
+               <a href="#" class="navbar__link" id="buttonDropdown">
+                  Área Cultural
+                  <span class="navbar__icon">
+                     <i class="fas fa-sort-down"></i>
+                  </span>
+               </a>
+
+               <div class="overlayNav"></div>
+               <div class="dropdown" id="dropdown">
+                  <a href="./teatro.html" class="dropdown__link"><span>Teatro</span> Agustin Pio Barrios</a>
+                  <a href="./seminario.html" class="dropdown__link"><span>Sala seminario</span> Branislava Susnik</a>
+                  <a href="./anfiteatro.html" class="dropdown__link"><span>Anfiteatro</span> Oscar Cardozo Ocampo</a>
+                  <a href="./exhibiciones.html" class="dropdown__link"><span>Sala de Exposiciones</span> Jacinto
+                     Rivero</a>
+                  <a href="./reuniones.html" class="dropdown__link"><span>Sala de Reuniones</span> Agustina Miranda</a>
+                  <a href="./biblioteca.html" class="dropdown__link"><span>Biblioteca</span> Herib Campos Cervera</a>
+               </div>
+            </li>
+         </ul>
+
+         <div class="navbar__bars" id="buttonToggle">
+            <i class="fas fa-bars"></i>
+         </div>
+      </div>
+   </nav>
+
+   <header class="header__courses">
+      <div class="container">
+         <div class="header__info">
+            <h3 class="header__title--courses">Gimnasio</h3>
+         </div>
+         <div class="header__media">
+            <img src="./images/header_gimnasio.png" alt="" class="header__image">
+         </div>
+      </div>
+   </header>
+
+   <section class="content-principal">
+      <section class="courses-blockquote courses-blockquote--gimnasio container">
+         <div class="blockquote-left">
+            <p class="courses-blockquote__description">El Gimnasio del CPJ, es una de las más completas en nuestro
+               país para la práctica de Artes Marciales y Gimnasia Artística.
+               Cuenta con un Dojo especialmente equipado para la práctica
+               de Judo y Karate, como así mismo espacios adaptados para la
+               práctica de Taekondo, Jiu Jitsu, Bozen Do, Hap Kido, Kung Fu,
+               como así también para la práctica de ejercicios como Zumba,
+               Pilates Mat, y otros.</p>
+            <p class="courses-blockquote__description">Para la práctica de Gimnasia Artística, el área cuenta con
+               equipos reglamentarios y recomendados por la Federación
+               Internacional de Gimnasia Artística, de la marca Internacional
+               Senoh, para prácticas en suelo, caballetes de salto,
+               trampolines, vigas, entre otros.</p>
+         </div>
+         <div class="blockquote-right">
+            <h3 class="blockquote__title">Profesionales calificados</h3>
+            <p class="courses-blockquote__description">Dispone de profesionales altamente calificados
+               para el desarrollo de las múltiples disciplinas
+               que se practican en ella.</p>
+            <p class="courses-blockquote__description">En el Gimnasio pueden practicar niños, jóvenes, adultos y adultos
+               mayores, las siguientes modalidades: Hap- kido, Jiu
+               Jitsu, Judo, Karate, Tae Kwon do Kids, Tae Kwon Do, Tae Kwon Do cinturón negro, Zumba Fitness, Strong by
+               Zumba, Pilates
+               Mat, Power Fit, Gimnasia Especial.</p>
+         </div>
+      </section>
+
+      <main class="courses container">
+
+         <article class="courses__item">
+            <h3 class="courses__title">HAP- KIDO <span>(5 años en adelante)</span></h3>
+            <div class="courses__grid">
+               <div class="courses__media">
+                  <div class="courses-tag">
+                     <p class="courses-tag__text">Disponible</p>
+                  </div>
+                  <img src="./images/gimcursos-31.jpg" alt="" class="courses__image">
+                  <p class="courses__description--footer">* Para más información complete el formulario de contacto</p>
+
+               </div>
+               <div class="courses__info">
+                  <p class="courses__description">Lorem ipsum dolor sit amet consectetur adipiscing elit, eros proin
+                     accumsan urna
+                     curabitur sapien, et praesent odio taciti sociosqu egestas. In suspendisse curae
+                     nec lacinia venenatis pharetra tellus penatibus, platea conubia commodo purus
+                     aliquam volutpat vitae, vehicula erat quis litora augue fringilla orci.</p>
+                  <div class="courses__details">
+                     <span class="courses__description--bold">Inicio: </span><span
+                        class="courses__description">20-09-2020</span>,
+                     <span class="courses__description--bold">Duración: </span><span class="courses__description">0
+                        meses</span>,
+                     <span class="courses__description--bold">Costo: </span><span class="courses__description">Gs.
+                        000</span><br>
+                     <span class="courses__description--bold">A cargo de: Prof.Nombre Apellido</span>
+                  </div>
+                  <div class="courses__details">
+                     <span class="courses__description--bold">Materiales: </span><span class="courses__description">Tipo
+                        de
+                        papel, tipo de pinturas, tipo de pinceles, materiales de corte,
+                        elementos básicos o esenciales. </span>,
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article class="courses__item">
+            <h3 class="courses__title">JIU JITSU <span>(13 años en adelante)</span></h3>
+            <div class="courses__grid">
+               <div class="courses__media">
+                  <div class="courses-tag courses-tag__off">
+                     <p class="courses-tag__text">No Disponible</p>
+                  </div>
+                  <img src="./images/gimcursos-35.jpg" alt="" class="courses__image">
+                  <p class="courses__description--footer">* Para más información complete el formulario de contacto</p>
+
+               </div>
+               <div class="courses__info">
+                  <p class="courses__description">Lorem ipsum dolor sit amet consectetur adipiscing elit, eros proin
+                     accumsan urna
+                     curabitur sapien, et praesent odio taciti sociosqu egestas. In suspendisse curae
+                     nec lacinia venenatis pharetra tellus penatibus, platea conubia commodo purus
+                     aliquam volutpat vitae, vehicula erat quis litora augue fringilla orci.</p>
+                  <div class="courses__details">
+                     <span class="courses__description--bold">Inicio: </span><span
+                        class="courses__description">20-09-2020</span>,
+                     <span class="courses__description--bold">Duración: </span><span class="courses__description">0
+                        meses</span>,
+                     <span class="courses__description--bold">Costo: </span><span class="courses__description">Gs.
+                        000</span><br>
+                     <span class="courses__description--bold">A cargo de: Prof.Nombre Apellido</span>
+                  </div>
+                  <div class="courses__details">
+                     <span class="courses__description--bold">Materiales: </span><span class="courses__description">Tipo
+                        de
+                        papel, tipo de pinturas, tipo de pinceles, materiales de corte,
+                        elementos básicos o esenciales. </span>,
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article class="courses__item">
+            <h3 class="courses__title">JUDO <span>(5 años en adelante)</span></h3>
+            <div class="courses__grid">
+               <div class="courses__media">
+                  <div class="courses-tag">
+                     <p class="courses-tag__text">Disponible</p>
+                  </div>
+                  <img src="./images/gimcursos-33.jpg" alt="" class="courses__image">
+                  <p class="courses__description--footer">* Para más información complete el formulario de contacto</p>
+
+               </div>
+               <div class="courses__info">
+                  <p class="courses__description">Lorem ipsum dolor sit amet consectetur adipiscing elit, eros proin
+                     accumsan urna
+                     curabitur sapien, et praesent odio taciti sociosqu egestas. In suspendisse curae
+                     nec lacinia venenatis pharetra tellus penatibus, platea conubia commodo purus
+                     aliquam volutpat vitae, vehicula erat quis litora augue fringilla orci.</p>
+                  <div class="courses__details">
+                     <span class="courses__description--bold">Inicio: </span><span
+                        class="courses__description">20-09-2020</span>,
+                     <span class="courses__description--bold">Duración: </span><span class="courses__description">0
+                        meses</span>,
+                     <span class="courses__description--bold">Costo: </span><span class="courses__description">Gs.
+                        000</span><br>
+                     <span class="courses__description--bold">A cargo de: Prof.Nombre Apellido</span>
+                  </div>
+                  <div class="courses__details">
+                     <span class="courses__description--bold">Materiales: </span><span class="courses__description">Tipo
+                        de
+                        papel, tipo de pinturas, tipo de pinceles, materiales de corte,
+                        elementos básicos o esenciales. </span>,
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article class="courses__item">
+            <h3 class="courses__title">KARATE <span>(5 años en adelante)</span></h3>
+            <div class="courses__grid">
+               <div class="courses__media">
+                  <div class="courses-tag">
+                     <p class="courses-tag__text">Disponible</p>
+                  </div>
+                  <img src="./images/gimcursos-37.jpg" alt="" class="courses__image">
+                  <p class="courses__description--footer">* Para más información complete el formulario de contacto</p>
+
+               </div>
+               <div class="courses__info">
+                  <p class="courses__description">Lorem ipsum dolor sit amet consectetur adipiscing elit, eros proin
+                     accumsan urna
+                     curabitur sapien, et praesent odio taciti sociosqu egestas. In suspendisse curae
+                     nec lacinia venenatis pharetra tellus penatibus, platea conubia commodo purus
+                     aliquam volutpat vitae, vehicula erat quis litora augue fringilla orci.</p>
+                  <div class="courses__details">
+                     <span class="courses__description--bold">Inicio: </span><span
+                        class="courses__description">20-09-2020</span>,
+                     <span class="courses__description--bold">Duración: </span><span class="courses__description">0
+                        meses</span>,
+                     <span class="courses__description--bold">Costo: </span><span class="courses__description">Gs.
+                        000</span><br>
+                     <span class="courses__description--bold">A cargo de: Prof.Nombre Apellido</span>
+                  </div>
+                  <div class="courses__details">
+                     <span class="courses__description--bold">Materiales: </span><span class="courses__description">Tipo
+                        de
+                        papel, tipo de pinturas, tipo de pinceles, materiales de corte,
+                        elementos básicos o esenciales. </span>,
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article class="courses__item">
+            <h3 class="courses__title">TAE KWON DO KIDS <span>(3 a 6 años)</span></h3>
+            <div class="courses__grid">
+               <div class="courses__media">
+                  <div class="courses-tag">
+                     <p class="courses-tag__text">Disponible</p>
+                  </div>
+                  <img src="./images/gimcursos-32.jpg" alt="" class="courses__image">
+                  <p class="courses__description--footer">* Para más información complete el formulario de contacto</p>
+
+               </div>
+               <div class="courses__info">
+                  <p class="courses__description">Lorem ipsum dolor sit amet consectetur adipiscing elit, eros proin
+                     accumsan urna
+                     curabitur sapien, et praesent odio taciti sociosqu egestas. In suspendisse curae
+                     nec lacinia venenatis pharetra tellus penatibus, platea conubia commodo purus
+                     aliquam volutpat vitae, vehicula erat quis litora augue fringilla orci.</p>
+                  <div class="courses__details">
+                     <span class="courses__description--bold">Inicio: </span><span
+                        class="courses__description">20-09-2020</span>,
+                     <span class="courses__description--bold">Duración: </span><span class="courses__description">0
+                        meses</span>,
+                     <span class="courses__description--bold">Costo: </span><span class="courses__description">Gs.
+                        000</span><br>
+                     <span class="courses__description--bold">A cargo de: Prof.Nombre Apellido</span>
+                  </div>
+                  <div class="courses__details">
+                     <span class="courses__description--bold">Materiales: </span><span class="courses__description">Tipo
+                        de
+                        papel, tipo de pinturas, tipo de pinceles, materiales de corte,
+                        elementos básicos o esenciales. </span>,
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article class="courses__item">
+            <h3 class="courses__title">TAE KWON DO <span>(A partir de 7 años)</span></h3>
+            <div class="courses__grid">
+               <div class="courses__media">
+                  <div class="courses-tag courses-tag__off">
+                     <p class="courses-tag__text">No Disponible</p>
+                  </div>
+                  <img src="./images/gimcursos-37.jpg" alt="" class="courses__image">
+                  <p class="courses__description--footer">* Para más información complete el formulario de contacto</p>
+
+               </div>
+               <div class="courses__info">
+                  <p class="courses__description">Lorem ipsum dolor sit amet consectetur adipiscing elit, eros proin
+                     accumsan urna
+                     curabitur sapien, et praesent odio taciti sociosqu egestas. In suspendisse curae
+                     nec lacinia venenatis pharetra tellus penatibus, platea conubia commodo purus
+                     aliquam volutpat vitae, vehicula erat quis litora augue fringilla orci.</p>
+                  <div class="courses__details">
+                     <span class="courses__description--bold">Inicio: </span><span
+                        class="courses__description">20-09-2020</span>,
+                     <span class="courses__description--bold">Duración: </span><span class="courses__description">0
+                        meses</span>,
+                     <span class="courses__description--bold">Costo: </span><span class="courses__description">Gs.
+                        000</span><br>
+                     <span class="courses__description--bold">A cargo de: Prof.Nombre Apellido</span>
+                  </div>
+                  <div class="courses__details">
+                     <span class="courses__description--bold">Materiales: </span><span class="courses__description">Tipo
+                        de
+                        papel, tipo de pinturas, tipo de pinceles, materiales de corte,
+                        elementos básicos o esenciales. </span>,
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article class="courses__item">
+            <h3 class="courses__title">TAE KWON DO <span>(Exclusivo para cinturones negros)</span></h3>
+            <div class="courses__grid">
+               <div class="courses__media">
+                  <div class="courses-tag courses-tag__off">
+                     <p class="courses-tag__text">No Disponible</p>
+                  </div>
+                  <img src="./images/gimcursos-36.jpg" alt="" class="courses__image">
+                  <p class="courses__description--footer">* Para más información complete el formulario de contacto</p>
+
+               </div>
+               <div class="courses__info">
+                  <p class="courses__description">Lorem ipsum dolor sit amet consectetur adipiscing elit, eros proin
+                     accumsan urna
+                     curabitur sapien, et praesent odio taciti sociosqu egestas. In suspendisse curae
+                     nec lacinia venenatis pharetra tellus penatibus, platea conubia commodo purus
+                     aliquam volutpat vitae, vehicula erat quis litora augue fringilla orci.</p>
+                  <div class="courses__details">
+                     <span class="courses__description--bold">Inicio: </span><span
+                        class="courses__description">20-09-2020</span>,
+                     <span class="courses__description--bold">Duración: </span><span class="courses__description">0
+                        meses</span>,
+                     <span class="courses__description--bold">Costo: </span><span class="courses__description">Gs.
+                        000</span><br>
+                     <span class="courses__description--bold">A cargo de: Prof.Nombre Apellido</span>
+                  </div>
+                  <div class="courses__details">
+                     <span class="courses__description--bold">Materiales: </span><span class="courses__description">Tipo
+                        de
+                        papel, tipo de pinturas, tipo de pinceles, materiales de corte,
+                        elementos básicos o esenciales. </span>,
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <!---->
+
+         <article class="courses__item">
+            <h3 class="courses__title">ZUMBA FITNES <span>(13 años en adelante)</span></h3>
+            <div class="courses__grid">
+               <div class="courses__media">
+                  <div class="courses-tag">
+                     <p class="courses-tag__text">Disponible</p>
+                  </div>
+                  <img src="./images/zumcursos-38.jpg" alt="" class="courses__image">
+                  <p class="courses__description--footer">* Para más información complete el formulario de contacto</p>
+
+               </div>
+               <div class="courses__info">
+                  <p class="courses__description">Lorem ipsum dolor sit amet consectetur adipiscing elit, eros proin
+                     accumsan urna
+                     curabitur sapien, et praesent odio taciti sociosqu egestas. In suspendisse curae
+                     nec lacinia venenatis pharetra tellus penatibus, platea conubia commodo purus
+                     aliquam volutpat vitae, vehicula erat quis litora augue fringilla orci.</p>
+                  <div class="courses__details">
+                     <span class="courses__description--bold">Inicio: </span><span
+                        class="courses__description">20-09-2020</span>,
+                     <span class="courses__description--bold">Duración: </span><span class="courses__description">0
+                        meses</span>,
+                     <span class="courses__description--bold">Costo: </span><span class="courses__description">Gs.
+                        000</span><br>
+                     <span class="courses__description--bold">A cargo de: Prof.Nombre Apellido</span>
+                  </div>
+                  <div class="courses__details">
+                     <span class="courses__description--bold">Materiales: </span><span class="courses__description">Tipo
+                        de
+                        papel, tipo de pinturas, tipo de pinceles, materiales de corte,
+                        elementos básicos o esenciales. </span>,
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article class="courses__item">
+            <h3 class="courses__title">STRONG BY ZUMBA <span>(13 años en adelante)</span></h3>
+            <div class="courses__grid">
+               <div class="courses__media">
+                  <div class="courses-tag courses-tag__off">
+                     <p class="courses-tag__text">No Disponible</p>
+                  </div>
+                  <img src="./images/zumcursos-47.jpg" alt="" class="courses__image">
+                  <p class="courses__description--footer">* Para más información complete el formulario de contacto</p>
+
+               </div>
+               <div class="courses__info">
+                  <p class="courses__description">Lorem ipsum dolor sit amet consectetur adipiscing elit, eros proin
+                     accumsan urna
+                     curabitur sapien, et praesent odio taciti sociosqu egestas. In suspendisse curae
+                     nec lacinia venenatis pharetra tellus penatibus, platea conubia commodo purus
+                     aliquam volutpat vitae, vehicula erat quis litora augue fringilla orci.</p>
+                  <div class="courses__details">
+                     <span class="courses__description--bold">Inicio: </span><span
+                        class="courses__description">20-09-2020</span>,
+                     <span class="courses__description--bold">Duración: </span><span class="courses__description">0
+                        meses</span>,
+                     <span class="courses__description--bold">Costo: </span><span class="courses__description">Gs.
+                        000</span><br>
+                     <span class="courses__description--bold">A cargo de: Prof.Nombre Apellido</span>
+                  </div>
+                  <div class="courses__details">
+                     <span class="courses__description--bold">Materiales: </span><span class="courses__description">Tipo
+                        de
+                        papel, tipo de pinturas, tipo de pinceles, materiales de corte,
+                        elementos básicos o esenciales. </span>,
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article class="courses__item">
+            <h3 class="courses__title">PILATES MAN <span>(13 años en adelante)</span></h3>
+            <div class="courses__grid">
+               <div class="courses__media">
+                  <div class="courses-tag">
+                     <p class="courses-tag__text">Disponible</p>
+                  </div>
+                  <img src="./images/zumcursos-46.jpg" alt="" class="courses__image">
+                  <p class="courses__description--footer">* Para más información complete el formulario de contacto</p>
+
+               </div>
+               <div class="courses__info">
+                  <p class="courses__description">Lorem ipsum dolor sit amet consectetur adipiscing elit, eros proin
+                     accumsan urna
+                     curabitur sapien, et praesent odio taciti sociosqu egestas. In suspendisse curae
+                     nec lacinia venenatis pharetra tellus penatibus, platea conubia commodo purus
+                     aliquam volutpat vitae, vehicula erat quis litora augue fringilla orci.</p>
+                  <div class="courses__details">
+                     <span class="courses__description--bold">Inicio: </span><span
+                        class="courses__description">20-09-2020</span>,
+                     <span class="courses__description--bold">Duración: </span><span class="courses__description">0
+                        meses</span>,
+                     <span class="courses__description--bold">Costo: </span><span class="courses__description">Gs.
+                        000</span><br>
+                     <span class="courses__description--bold">A cargo de: Prof.Nombre Apellido</span>
+                  </div>
+                  <div class="courses__details">
+                     <span class="courses__description--bold">Materiales: </span><span class="courses__description">Tipo
+                        de
+                        papel, tipo de pinturas, tipo de pinceles, materiales de corte,
+                        elementos básicos o esenciales. </span>,
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article class="courses__item">
+            <h3 class="courses__title">POWER FIT <span>(13 años en adelante)</span></h3>
+            <div class="courses__grid">
+               <div class="courses__media">
+                  <div class="courses-tag">
+                     <p class="courses-tag__text">Disponible</p>
+                  </div>
+                  <img src="./images/zumcursos-48.jpg" alt="" class="courses__image">
+                  <p class="courses__description--footer">* Para más información complete el formulario de contacto</p>
+
+               </div>
+               <div class="courses__info">
+                  <p class="courses__description">Lorem ipsum dolor sit amet consectetur adipiscing elit, eros proin
+                     accumsan urna
+                     curabitur sapien, et praesent odio taciti sociosqu egestas. In suspendisse curae
+                     nec lacinia venenatis pharetra tellus penatibus, platea conubia commodo purus
+                     aliquam volutpat vitae, vehicula erat quis litora augue fringilla orci.</p>
+                  <div class="courses__details">
+                     <span class="courses__description--bold">Inicio: </span><span
+                        class="courses__description">20-09-2020</span>,
+                     <span class="courses__description--bold">Duración: </span><span class="courses__description">0
+                        meses</span>,
+                     <span class="courses__description--bold">Costo: </span><span class="courses__description">Gs.
+                        000</span><br>
+                     <span class="courses__description--bold">A cargo de: Prof.Nombre Apellido</span>
+                  </div>
+                  <div class="courses__details">
+                     <span class="courses__description--bold">Materiales: </span><span class="courses__description">Tipo
+                        de
+                        papel, tipo de pinturas, tipo de pinceles, materiales de corte,
+                        elementos básicos o esenciales. </span>,
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article class="courses__item">
+            <h3 class="courses__title">GIMNASIA ESPECIAL <span>(Para niños y jóvenes discapacitados)</span></h3>
+            <div class="courses__grid">
+               <div class="courses__media">
+                  <div class="courses-tag">
+                     <p class="courses-tag__text">Disponible</p>
+                  </div>
+                  <img src="./images/zumcursos-44.jpg" alt="" class="courses__image">
+                  <p class="courses__description--footer">* Para más información complete el formulario de contacto</p>
+
+               </div>
+               <div class="courses__info">
+                  <p class="courses__description">Lorem ipsum dolor sit amet consectetur adipiscing elit, eros proin
+                     accumsan urna
+                     curabitur sapien, et praesent odio taciti sociosqu egestas. In suspendisse curae
+                     nec lacinia venenatis pharetra tellus penatibus, platea conubia commodo purus
+                     aliquam volutpat vitae, vehicula erat quis litora augue fringilla orci.</p>
+                  <div class="courses__details">
+                     <span class="courses__description--bold">Inicio: </span><span
+                        class="courses__description">20-09-2020</span>,
+                     <span class="courses__description--bold">Duración: </span><span class="courses__description">0
+                        meses</span>,
+                     <span class="courses__description--bold">Costo: </span><span class="courses__description">Gs.
+                        000</span><br>
+                     <span class="courses__description--bold">A cargo de: Prof.Nombre Apellido</span>
+                  </div>
+                  <div class="courses__details">
+                     <span class="courses__description--bold">Materiales: </span><span class="courses__description">Tipo
+                        de
+                        papel, tipo de pinturas, tipo de pinceles, materiales de corte,
+                        elementos básicos o esenciales. </span>,
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article class="courses__item">
+            <h3 class="courses__title">GIMNASIA ARTÍSTICA <span>(2 años en adelante)</span></h3>
+            <div class="courses__grid">
+               <div class="courses__media">
+                  <div class="courses-tag courses-tag__off">
+                     <p class="courses-tag__text">No Disponible</p>
+                  </div>
+                  <img src="./images/zumcursos-30.jpg" alt="" class="courses__image">
+                  <p class="courses__description--footer">* Para más información complete el formulario de contacto</p>
+
+               </div>
+               <div class="courses__info">
+                  <p class="courses__description">Lorem ipsum dolor sit amet consectetur adipiscing elit, eros proin
+                     accumsan urna
+                     curabitur sapien, et praesent odio taciti sociosqu egestas. In suspendisse curae
+                     nec lacinia venenatis pharetra tellus penatibus, platea conubia commodo purus
+                     aliquam volutpat vitae, vehicula erat quis litora augue fringilla orci.</p>
+                  <div class="courses__details">
+                     <span class="courses__description--bold">Inicio: </span><span
+                        class="courses__description">20-09-2020</span>,
+                     <span class="courses__description--bold">Duración: </span><span class="courses__description">0
+                        meses</span>,
+                     <span class="courses__description--bold">Costo: </span><span class="courses__description">Gs.
+                        000</span><br>
+                     <span class="courses__description--bold">A cargo de: Prof.Nombre Apellido</span>
+                  </div>
+                  <div class="courses__details">
+                     <span class="courses__description--bold">Materiales: </span><span class="courses__description">Tipo
+                        de
+                        papel, tipo de pinturas, tipo de pinceles, materiales de corte,
+                        elementos básicos o esenciales. </span>,
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article class="courses__item">
+            <h3 class="courses__title">FÍSICOCULTURISMO <span>(Para niños y jóvenes discapacitados)</span></h3>
+            <div class="courses__grid">
+               <div class="courses__media">
+                  <div class="courses-tag">
+                     <p class="courses-tag__text">Disponible</p>
+                  </div>
+                  <img src="./images/fisiculturismo.png" alt="" class="courses__image">
+                  <p class="courses__description--footer">* Para más información complete el formulario de contacto</p>
+
+               </div>
+               <div class="courses__info">
+                  <p class="courses__description">El Gimnasio cuenta con equipos apropiados para la práctica de esta
+                     disciplina.</p>
+                  <div class="courses__details">
+                     <span class="courses__description--bold">Inicio: </span><span
+                        class="courses__description">20-09-2020</span>,
+                     <span class="courses__description--bold">Costo: </span><span class="courses__description">Gs.
+                        000</span><br>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <section class="musica-contact musica-contact--gimnasio container">
+            <!-- It has a different class because of the structure that the design has -->
+            <div class="gimnasio-contact__info"></div>
+            <div class="musica-contact__form musica-contact__form--gimnasio">
+               <form class="form form--location">
+                  <h3 class="form__subtitle">Contacto
+                     <a href="mailto:areagimnasiocpj@gmail.com" class="mailto">areagimnasiocpj@gmail.com</a>
+                  </h3>
+                  <span class="form__title">Complete los siguientes datos</span>
+                  <div class="form__group">
+                     <input type="text" class="form__input" placeholder="Nombre y Apellido">
+                  </div>
+                  <div class="form__group">
+                     <input type="text" class="form__input" placeholder="Correo Electrónico">
+                  </div>
+                  <div class="form__group">
+                     <textarea name="message" id="message" rows="5" class="form__input form__input--textarea"
+                        placeholder="Mensaje"></textarea>
+                  </div>
+                  <span class="form__title">Especifique el curso de su interés</span>
+
+                  <div class="form__group--radios">
+                     <div class="form__group--radio">
+                        <input type="radio" name="interes" id="kido">
+                        <label for="kido">Hap-Kido</label>
+                     </div>
+                     <div class="form__group--radio">
+                        <input type="radio" name="interes" id="jiu">
+                        <label for="jiu">Jiu Jitsu</label>
+                     </div>
+                     <div class="form__group--radio">
+                        <input type="radio" name="interes" id="judo">
+                        <label for="judo">Judo</label>
+                     </div>
+                     <div class="form__group--radio">
+                        <input type="radio" name="interes" id="karate">
+                        <label for="karate">Karate</label>
+                     </div>
+                     <div class="form__group--radio">
+                        <input type="radio" name="interes" id="tae">
+                        <label for="tae">Tae Kwon Do</label>
+                     </div>
+                     <div class="form__group--radio">
+                        <input type="radio" name="interes" id="zumba">
+                        <label for="zumba">Zumba Fitness</label>
+                     </div>
+                     <div class="form__group--radio">
+                        <input type="radio" name="interes" id="strong">
+                        <label for="strong">Strong By Zumba</label>
+                     </div>
+                     <div class="form__group--radio">
+                        <input type="radio" name="interes" id="pilates">
+                        <label for="pilates">Pilates Mat</label>
+                     </div>
+                     <div class="form__group--radio">
+                        <input type="radio" name="interes" id="power">
+                        <label for="power">Power Fit</label>
+                     </div>
+                     <div class="form__group--radio">
+                        <input type="radio" name="interes" id="gimnasia-e">
+                        <label for="gimnasia-e">Gimnasia Especial</label>
+                     </div>
+                     <div class="form__group--radio">
+                        <input type="radio" name="interes" id="gimnasia-a">
+                        <label for="gimnasia-a">Gimnasia Artística</label>
+                     </div>
+                     <div class="form__group--radio">
+                        <input type="radio" name="interes" id="fisicult">
+                        <label for="fisicult">Fisicoculturísmo</label>
+                     </div>
+                  </div>
+
+                  <div class="form__action form__action--course">
+                     <button type="submit" class="form__button">Enviar</button>
+                  </div>
+
+               </form>
+            </div>
+         </section>
+
+         <div class="button-up-container">
+            <a href="#" class="button-up--courses">
+               <img src="./images/32.png" alt="" class="button-up__image">
+            </a>
+         </div>
+      </main>
+   </section>
+
+   <div class="before-footer container">
+      <div class="before-footer__item">
+         <img src="./images/gestion_intendente.png" alt="" class="before-footer__image">
+      </div>
+      <div class="before-footer__item">
+         <img src="./images/hashtag_asu.png" alt="" class="before-footer__image">
+      </div>
+      <div class="before-footer__item">
+         <img src="./images/logo_asu.png" alt="" class="before-footer__image before-footer__image--logo">
+      </div>
+      <div class="before-footer__item">
+         <img src="./images/logoOr.png" alt="" class="before-footer__image">
+      </div>
+   </div>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__main">
+            <div class="footer-detail">
+               <h3 class="footer__social-title">Contactanos</h3>
+               <a href="#" class="footer-detail__link">
+                  <span class="footer-detail__icon">
+                     <i class="fas fa-phone-alt"></i>
+                  </span>
+                  <span class="footer-detail__text">021 607 277</span>
+               </a>
+               <a href="#" class="footer-detail__link">
+                  <span class="footer-detail__icon">
+                     <i class="fas fa-envelope"></i>
+                  </span>
+                  <span class="footer-detail__text">centroparaguayojapones@gmail.com</span>
+               </a>
+               <a href="#" class="footer-detail__link">
+                  <span class="footer-detail__icon">
+                     <i class="fas fa-map-marker-alt"></i>
+                  </span>
+                  <span class="footer-detail__text">
+                     Av Domingo Portillo y Julio Correa<br>c/ Santísima Trinidad,
+                     Asunción</span>
+               </a>
+            </div>
+            <div class="footer__social-container">
+               <h3 class="footer__social-title">Seguinos</h3>
+               <div class="footer__social">
+                  <a href="#" class="footer__link">
+                     <img src="./images/facebook.png" alt="" class="footer__image">
+                  </a>
+                  <a href="#" class="footer__link">
+                     <img src="./images/twitter.png" alt="" class="footer__image">
+                  </a>
+                  <a href="#" class="footer__link">
+                     <img src="./images/instagram.png" alt="" class="footer__image">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="copyright">
+         <span class="footer__copy">Diseño y desarrollo web por <a href="https://www.fincreativo.com/"
+               class="footer__copy--link" target="_blank">fincreativo</a></span>
+      </div>
+   </footer>
+
+   <script src="./js/app.js"></script>
+
+</body>
+
+</html>

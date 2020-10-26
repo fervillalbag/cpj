@@ -1,0 +1,149 @@
+
+.managers {
+   padding-top: 4rem;
+   margin-top: 24vh;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+
+   @include responsive(768px) {
+      grid-template-columns: 1fr;
+      grid-row-gap: 1rem;
+   }
+}
+
+.managers__image {
+   max-width: 60%;
+}
+
+.managers__title {
+   @extend %title__large;
+}
+
+.managers__subtitle {
+   @extend %title;
+}
+
+.managers__media {
+   text-align: center;
+}
+
+.managers__description {
+   @include description(100%);
+
+   &--principal {
+      font-size: 1.3rem;
+   }
+}
+
+.managers__caption {
+   @include caption(88%);
+
+   @include responsive(768px) {
+      max-width: 100%;
+      transform: translateX(0);
+   }
+}
+
+.managers__detail {
+   @include description(96%);
+}
+
+.sidebar__description {
+   margin-top: 2rem;
+   @include description(60%);
+
+   @include responsive(768px) {
+      max-width: 100%;
+   }
+}
+
+.managers__footer {
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   grid-column-gap: 1rem;
+   align-items: center;
+
+   @include responsive(768px) {
+      grid-template-columns: 1fr;
+      grid-row-gap: 1rem;
+   }
+}
+
+.social__title {
+   @extend %title;
+   text-align: center;
+}
+
+.social__links {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.social__icon {
+   display: block;
+   padding: 0.25rem;
+   color: $principalColor;
+   font-size: 1.8rem;
+   margin: 0 0.3rem;
+}
+
+.awards__span {
+   color: $principalColor;
+   font-weight: 400;
+}
+
+.navigation-footer {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   margin-top: 8rem;
+   margin-bottom: 5rem;
+   border-top: 2px solid $darkColor;
+   padding-top: 1rem;
+
+   @include responsive(768px) {
+      grid-template-columns: 1fr;
+      grid-row-gap: 2rem;
+   }
+
+   &__link {
+      color: $darkColor;
+   }
+
+   &__image {
+      width: 100%;
+   }
+
+   &__left {
+      justify-self: start;
+
+      @include responsive(768px) {
+         justify-self: center;
+      }
+
+      .navigation-footer__link {
+         display: grid;
+         grid-template-columns: 70px 1fr;
+         grid-column-gap: 1rem;
+         align-items: center;
+
+         @include responsive(768px) {
+            grid-column-gap: 0;
+         }
+      }
+   }
+
+   &__right {
+      justify-self: end;
+
+      @include responsive(768px) {
+         justify-self: center;
+      }
+
+      .navigation-footer__link {
+         display: grid;
+         grid-template-columns: 1fr 70px;
+         align-items: center;
+      }
+   }
+}

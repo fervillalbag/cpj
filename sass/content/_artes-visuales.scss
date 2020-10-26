@@ -1,0 +1,38 @@
+
+
+.artes-footer {
+   display: grid;
+   grid-template-columns: 1fr 1.2fr;
+
+   @include responsive(768px) {
+      grid-template-columns: 1fr;
+   }
+}
+
+.artes-footer__description {
+   @include description(100%);
+   font-size: 1.3rem;
+
+   &--bold {
+      font-weight: 500;
+      text-align: left;
+      font-size: 1.15rem;
+   }
+}
+
+.artes-footer__button {
+   display: inline-block;
+   border: 1px solid $darkColor;
+   padding: 0.5rem 2rem;
+   font-size: 1.25rem;
+   color: $darkColor;
+}
+
+.mailto {
+   color: $redColor;
+   text-transform: lowercase;
+}
+
+.courses-blockquote--visuales {
+   padding-top: 12rem;
+}

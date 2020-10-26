@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="shortcut icon" href="./images/Logo-CPJ.png" type="image/x-icon">
+   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous" />
+   <link rel="stylesheet" href="./css/main.css">
+
+   <title>Centro Paraguayo Japonés</title>
+
+</head>
+
+<body>
+
+   <nav class="navbar">
+      <div class="container">
+         <div class="navbar__logo">
+            <a href="./" class="logo__link">
+               <img src="./images/logoOr.png" alt="" class="logo__image">
+            </a>
+         </div>
+
+         <ul class="navbar__menu">
+
+            <button type="button" class="buttonClose" id="buttonClose">
+               <i class="fas fa-times"></i>
+            </button>
+
+            <li class="navbar__item navbar__item--first"><a href="./history.html" class="navbar__link">Historia</a></li>
+            <li class="navbar__item"><a href="./managers.html" class="navbar__link">Dirección</a></li>
+            <li class="navbar__item navbar__item--dropdown">
+               <a href="#" class="navbar__link" id="buttonDropdown1">
+                  Área Académica
+                  <span class="navbar__icon">
+                     <i class="fas fa-sort-down"></i>
+                  </span>
+               </a>
+
+               <div class="overlayNav"></div>
+               <div class="dropdown" id="dropdown1">
+
+                  <a href="./idiomas.html" class="dropdown__link"><span>Idiomas</span></a>
+                  <a href="./computacion.html" class="dropdown__link"><span>Computación</span></a>
+                  <a href="./danza.html" class="dropdown__link"><span>Academia de Danza</span></a>
+                  <a href="./musica.html" class="dropdown__link"><span>Conservatorio de Música</span></a>
+                  <a href="./artes-visuales.html" class="dropdown__link"><span>Artes Visuales</span></a>
+                  <a href="./gimnasio.html" class="dropdown__link"><span>Gimnasio</span></a>
+                  <a href="./adultos.html" class="dropdown__link"><span>Adultos Mayores</span></a>
+               </div>
+            </li>
+            <li class="navbar__item navbar__item--dropdown">
+               <a href="#" class="navbar__link" id="buttonDropdown">
+                  Área Cultural
+                  <span class="navbar__icon">
+                     <i class="fas fa-sort-down"></i>
+                  </span>
+               </a>
+
+               <div class="overlayNav"></div>
+               <div class="dropdown" id="dropdown">
+                  <a href="./teatro.html" class="dropdown__link"><span>Teatro</span> Agustin Pio Barrios</a>
+                  <a href="./seminario.html" class="dropdown__link"><span>Sala seminario</span> Branislava Susnik</a>
+                  <a href="./anfiteatro.html" class="dropdown__link"><span>Anfiteatro</span> Oscar Cardozo Ocampo</a>
+                  <a href="./exhibiciones.html" class="dropdown__link"><span>Sala de Exposiciones</span> Jacinto
+                     Rivero</a>
+                  <a href="./reuniones.html" class="dropdown__link"><span>Sala de Reuniones</span> Agustina Miranda</a>
+                  <a href="./biblioteca.html" class="dropdown__link"><span>Biblioteca</span> Herib Campos Cervera</a>
+               </div>
+            </li>
+         </ul>
+
+         <div class="navbar__bars" id="buttonToggle">
+            <i class="fas fa-bars"></i>
+         </div>
+      </div>
+   </nav>
+
+   <main class="principal-main">
+      <div class="managers container">
+         <div class="managers__info">
+            <h2 class="managers__title">Rocío María<br>Rolón Amarilla</h2>
+            <h3 class="managers__subtitle">Directora</h3>
+            <p class="managers__description managers__description--principal">Licenciada en Marketing y Publicidad
+               (Universidad
+               Americana de Asunción), además de Profesora
+               Superior en Danza Clásica, Danza Española y
+               Paraguaya (Academia de Danza “María
+               Auxiliadora” de Asunción).</p>
+
+            <p class="managers__description">En el ámbito de la docencia se ha desempeñado como
+               profesora y coreógrafa de varias Instituciones de enseñanza
+               de Danza muy reconocidas en el ámbito artístico a nivel
+               nacional, como la Academia de Petronita Vinader, la
+               Academia de Danzas de Zully Vinader, Sussy Sacco La
+               Academia, Academia de Danzas Elizabeth Vinader.</p>
+         </div>
+         <div class="managers__picture">
+            <div class="managers__media">
+               <img src="./images/15.png" alt="" class="managers__image">
+            </div>
+            <div class="managers__caption">
+               <p class="managers__detail">Actualmente, es Coordinadora Académica, Profesora, Orientadora
+                  para Tesis y Tesinas en Espacio Villa Morra – Materias Pedagógicas
+                  para la Danza, y Profesora y Vice Directora en Macarena Vinader
+                  Espacio Artístico.</p>
+            </div>
+         </div>
+      </div>
+
+      <aside class="managers__sidebar">
+         <div class="container">
+            <p class="sidebar__description">Así mismo, en el sector privado se ha desempeñado como Coreógrafa de Ópera y
+               Ballet
+               en la UNINORTE, fue Presidente de Directorio en la Cadena de Farmacias RED
+               FARMATOTAL, así también Coreógrafa y Productora Teatral en Productores Asociados
+               (Domingo Coronel y Antonio Apuril), Productora Artística (Segmento Madrugada)
+               Maratón TELETON, posteriormente Coordinadora de Coreógrafos, Coordinadora de Puesta
+               en Escena, Productora Artística, Directora de Arte de TELEFUTURO, Coordinadora
+               Artística de Festivales Folclóricos de CELULA S.A.</p>
+         </div>
+      </aside>
+
+      <section class="managers__footer container">
+         <div class="managers__social">
+            <h3 class="social__title">Para más información</h3>
+            <div class="social__links">
+               <a href="#" class="social__icon">
+                  <i class="fab fa-facebook-f"></i>
+               </a>
+               <a href="#" class="social__icon">
+                  <i class="fab fa-whatsapp"></i>
+               </a>
+               <a href="#" class="social__icon">
+                  <i class="fab fa-twitter"></i>
+               </a>
+               <a href="#" class="social__icon">
+                  <i class="fab fa-instagram"></i>
+               </a>
+            </div>
+         </div>
+         <div class="managers__awards">
+            <p class="managers__description managers__description--awards"><span class="awards__span">A nivel
+                  internacional</span> fue Asesora Artística de Canal RED UNO (Bolivia).</p>
+            <p class="managers__description managers__description--awards">Participó de festivales Folkloricos en
+               Israel, Argentina, Cuba, Colombia, Brasil.</p>
+            <p class="managers__description managers__description--awards">Miembro fundador del primer Grupo Flamenco
+               del Paraguay, Rumbaile con Emilio Paredes.</p>
+            <p class="managers__description managers__description--awards">Destacadas participaciones en numerosos
+               Concursos Nacionales e Internacionales como
+               bailarina y Coreógrafa, como en el Concurso Nacional De Danzas y Festival De danzas
+               Joinville (Brasil).</p>
+            <p class="managers__description managers__description--awards">Miembro de jurado de varios Concursos de
+               Danza y talento en todo el país.</p>
+            <p class="managers__description managers__description--awards">Ganadora de Becas de Estudio en Santiago De
+               Chile y Río de Janeiro, Brasil, para danza
+               española, jazz y ballet.</p>
+            <p class="managers__description managers__description--awards">Impulsora de numerosas jornadas de
+               capacitación en diferentes disciplinas de danza.</p>
+         </div>
+      </section>
+   </main>
+
+   <section class="navigation-footer container">
+      <div class="navigation-footer__left">
+         <a href="#" class="navigation-footer__link">
+            <div class="navigation-footer__media">
+               <img src="./images/33.png" alt="" class="navigation-footer__image">
+            </div>
+            <span class="navigation-footer__text">El IMA lanza convocatoria a inscripciones</span>
+         </a>
+      </div>
+      <div class="navigation-footer__right">
+         <a href="#" class="navigation-footer__link">
+            <span class="navigation-footer__text">Convocatoria 2020 Centro Paraguayo Japonés<br>
+               “EXTENSIÓN DE PLAZOS”</span>
+            <div class="navigation-footer__media">
+               <img src="./images/31.png" alt="" class="navigation-footer__image">
+            </div>
+         </a>
+      </div>
+   </section>
+
+   <div class="before-footer container">
+      <div class="before-footer__item">
+         <img src="./images/gestion_intendente.png" alt="" class="before-footer__image">
+      </div>
+      <div class="before-footer__item">
+         <img src="./images/hashtag_asu.png" alt="" class="before-footer__image">
+      </div>
+      <div class="before-footer__item">
+         <img src="./images/logo_asu.png" alt="" class="before-footer__image before-footer__image--logo">
+      </div>
+      <div class="before-footer__item">
+         <img src="./images/logoOr.png" alt="" class="before-footer__image">
+      </div>
+   </div>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__main">
+            <div class="footer-detail">
+               <h3 class="footer__social-title">Contactanos</h3>
+               <a href="#" class="footer-detail__link">
+                  <span class="footer-detail__icon">
+                     <i class="fas fa-phone-alt"></i>
+                  </span>
+                  <span class="footer-detail__text">021 607 277</span>
+               </a>
+               <a href="#" class="footer-detail__link">
+                  <span class="footer-detail__icon">
+                     <i class="fas fa-envelope"></i>
+                  </span>
+                  <span class="footer-detail__text">centroparaguayojapones@gmail.com</span>
+               </a>
+               <a href="#" class="footer-detail__link">
+                  <span class="footer-detail__icon">
+                     <i class="fas fa-map-marker-alt"></i>
+                  </span>
+                  <span class="footer-detail__text">
+                     Av Domingo Portillo y Julio Correa<br>c/ Santísima Trinidad,
+                     Asunción</span>
+               </a>
+            </div>
+            <div class="footer__social-container">
+               <h3 class="footer__social-title">Seguinos</h3>
+               <div class="footer__social">
+                  <a href="#" class="footer__link">
+                     <img src="./images/facebook.png" alt="" class="footer__image">
+                  </a>
+                  <a href="#" class="footer__link">
+                     <img src="./images/twitter.png" alt="" class="footer__image">
+                  </a>
+                  <a href="#" class="footer__link">
+                     <img src="./images/instagram.png" alt="" class="footer__image">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="copyright">
+         <span class="footer__copy">Diseño y desarrollo web por <a href="https://www.fincreativo.com/"
+               class="footer__copy--link" target="_blank">fincreativo</a></span>
+      </div>
+   </footer>
+
+   <script src="./js/app.js"></script>
+
+</body>
+
+</html>
