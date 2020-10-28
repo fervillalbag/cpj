@@ -6,11 +6,18 @@
    &--seminario,
    &--anfiteatro,
    &--exposiciones,
-   &--reuniones {
+   &--reuniones,
+   &--teatro {
       max-width: 450px;
       margin-right: 0;
    }
-
+   
+   &--teatro {
+      max-width: 450px;
+      margin-right: auto;
+      margin-left: auto;
+   }
+   
    &--anfiteatro {
       margin-top: 4rem;
    }

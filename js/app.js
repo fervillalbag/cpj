@@ -56,3 +56,18 @@ buttonToggle.addEventListener('click', () => {
 buttonClose.addEventListener('click', () => {
    navbarMenu.classList.remove('active');
 })
+
+/* Button Up */
+
+const buttonUp = document.querySelector('#button-up');
+buttonUp.addEventListener('click', () => {
+   window.scrollTo(0, 0);
+});
+
+window.addEventListener('scroll', (e) => {
+   if (window.scrollY > 500) {
+      buttonUp.classList.add('active');
+   } else {
+      buttonUp.classList.remove('active');
+   }
+})

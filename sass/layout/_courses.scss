@@ -321,7 +321,29 @@
 }
 
 .button-up-container {
+   position: fixed;
+   bottom: 1rem;
+   right: 1rem;
    display: flex;
    justify-content: flex-end;
    margin-top: 3rem;
+   transform: translateX(2000px);
+   transition: transform 1000ms ease-in-out;
+   z-index: 1000;
+
+   &.active {
+      transform: translateX(0);
+   }
+}
+
+.button-up--courses {
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+
+   &:focus,
+   &:active,
+   &:hover {
+      outline: none;
+   }
 }
