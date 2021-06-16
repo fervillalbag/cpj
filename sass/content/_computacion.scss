@@ -1,83 +1,81 @@
-
-.musica-contact--computacion{
-   grid-template-columns: 1.5fr 2fr;
+.musica-contact--computacion {
+  grid-template-columns: 1.5fr 2fr;
 }
 
 .courses-blockquote--computacion {
-   padding-top: 10rem;
+  padding-top: 10rem;
 }
 
 .courses-article {
-   background-color: $secondLightColor;
-   padding-top: 2.75rem;
-   padding-bottom: 2.75rem;
-   margin-bottom: 5rem;
+  background-color: $secondLightColor;
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+  margin-bottom: 5rem;
 
-   &__title {
-      text-transform: uppercase;
-      font-weight: 400;
-      font-size: 2.4rem;
-      margin-bottom: 3rem;
+  &__title {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+    margin-top: 0;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    grid-column-gap: 2rem;
+
+    @include responsive(768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__description {
+    @include description(100%);
+    margin-top: 0;
+  }
+
+  &__tag {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-column-gap: 1rem;
+    margin-bottom: 2rem;
+
+    .courses__details {
       margin-top: 0;
-   }
+    }
 
-   &__grid {
-      display: grid;
-      grid-template-columns: 1fr 1.25fr;
-      grid-column-gap: 2rem;
+    .courses__description {
+      font-size: 1rem;
 
-      @include responsive(768px) {
-         grid-template-columns: 1fr;
+      &--bold {
+        font-size: 1rem;
       }
-   }
-
-   &__description {
-      @include description(100%);
-      margin-top: 0;
-   }
-
-   &__tag {
-      display: grid;
-      grid-template-columns: 1fr 4fr;
-      grid-column-gap: 1rem;
-      margin-bottom: 2rem;
-
-      .courses__details {
-         margin-top: 0;
-      }
-
-      .courses__description {
-         font-size: 1rem;
-
-         &--bold {
-            font-size: 1rem;
-         }
-      }
-   }
+    }
+  }
 }
 
 .courses-tag__span {
-   display: block;
-   background-color: $redColor;
-   text-align: center;
-   font-weight: 400;
-   color: $firstLightColor;
-   padding-top: 0.75rem;
-   padding-bottom: 0.75rem;
-   font-size: 1.3rem;
+  display: block;
+  background-color: $redColor;
+  text-align: center;
+  font-weight: 400;
+  color: $firstLightColor;
+  padding: 0.75rem 0.5rem;
+  font-size: 0.85rem;
 
-   @include responsive(768px) {
-      font-size: 1.25rem;
-   }
+  @include responsive(768px) {
+    font-size: 1.25rem;
+  }
 }
 
 .courses__details--article {
-   margin-top: 0.75rem;
+  margin-top: 0.75rem;
 }
 
 .computacion-contact__info {
-   .musica-footer__description {
-      margin-bottom: 0.5rem;
-      margin-top: 0.5rem;
-   }
+  .musica-footer__description {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
 }
